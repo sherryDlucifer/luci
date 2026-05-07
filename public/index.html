@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detection System Redesign</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white text-slate-900">
+    <main class="mx-auto max-w-5xl px-6 py-10">
+      <header class="mb-10 border-b border-slate-200 pb-6">
+        <h1 class="text-3xl font-bold tracking-tight">Detection System Redesign</h1>
+        <p class="mt-3 text-slate-600">A simple, white-background system view of Campaigns, Kits, and Workflows.</p>
+      </header>
+
+      <section class="mb-8 rounded-xl border border-slate-200 p-6 shadow-sm">
+        <h2 class="text-xl font-semibold">Main Idea</h2>
+        <p class="mt-2 text-slate-700">Separate scam intelligence into three parts so investigators can clearly explain what happened, how it was found, and which tooling was involved.</p>
+        <div class="mt-4 overflow-x-auto">
+          <table class="min-w-full border-collapse text-left text-sm">
+            <thead>
+              <tr class="border-b border-slate-200">
+                <th class="px-3 py-2 font-semibold">Part</th>
+                <th class="px-3 py-2 font-semibold">Meaning</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-slate-100"><td class="px-3 py-2">Campaign</td><td class="px-3 py-2">A specific scam wave happening now.</td></tr>
+              <tr class="border-b border-slate-100"><td class="px-3 py-2">Kit</td><td class="px-3 py-2">Reusable attacker toolkit/template.</td></tr>
+              <tr><td class="px-3 py-2">Workflow</td><td class="px-3 py-2">Detection rule or search automation.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="grid gap-6 md:grid-cols-3">
+        <article class="rounded-xl border border-slate-200 p-5">
+          <h3 class="font-semibold">Campaign</h3>
+          <p class="mt-2 text-sm text-slate-700">Case file for a scam operation: targets, dates, evidence, URLs, templates, and favicon variants.</p>
+        </article>
+        <article class="rounded-xl border border-slate-200 p-5">
+          <h3 class="font-semibold">Kit</h3>
+          <p class="mt-2 text-sm text-slate-700">Reusable attack engine (e.g., Tycoon 2FA, FEMITBOT) used across many brands.</p>
+        </article>
+        <article class="rounded-xl border border-slate-200 p-5">
+          <h3 class="font-semibold">Workflow</h3>
+          <p class="mt-2 text-sm text-slate-700">Automation that hunts suspicious URLs and can be scoped to campaign, kit, brand, or exploration.</p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
